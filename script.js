@@ -59,7 +59,7 @@ async function initMap() {
       const currentPosition = earth.getCenter();
       const updatedPosition = [
         currentPosition[0],
-        currentPosition[1] + autoRotateSpeed,
+        currentPosition[1] - autoRotateSpeed,
       ];
       earth.setView(updatedPosition);
     }
