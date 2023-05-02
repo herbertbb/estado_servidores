@@ -1,0 +1,94 @@
+{
+  "servers": [
+    {
+      "id": 1,
+      "label": "Lima, Perú",
+      "description": "Lima",
+      "lat": -12.0464,
+      "lon": -77.0428,
+      "color": "azul",
+      "conexiones": [2, 3]
+    },
+    {
+      "id": 2,
+      "label": "Melbourne, Australia",
+      "description": "Melbourne",
+      "lat": -37.8136,
+      "lon": 144.9631,
+      "color": "verde",
+      "conexiones": [1, 4]
+    },
+    {
+      "id": 3,
+      "label": "California, EE.UU.",
+      "description": "California",
+      "lat": 36.7783,
+      "lon": -119.4179,
+      "color": "verde",
+      "conexiones": [1, 5]
+    },
+    {
+      "id": 4,
+      "label": "Toronto, Canadá",
+      "description": "Toronto",
+      "lat": 43.6532,
+      "lon": -79.3832,
+      "color": "azul",
+      "conexiones": [2, 6]
+    },
+    {
+      "id": 5,
+      "label": "Dubái, Emiratos Árabes Unidos",
+      "description": "Dubái",
+      "lat": 25.2048,
+      "lon": 55.2708,
+      "color": "rojo",
+      "conexiones": [3, 7]
+    },
+    {
+      "id": 6,
+      "label": "Sao Paulo, Brasil",
+      "description": "Sao Paulo",
+      "lat": -23.5505,
+      "lon": -46.6333,
+      "color": "verde",
+      "conexiones": [4, 8]
+    },
+    {
+      "id": 7,
+      "label": "Ashburn, EE.UU.",
+      "description": "Ashburn",
+      "lat": 39.0438,
+      "lon": -77.4874,
+      "color": "verde",
+      "conexiones": [5, 9]
+    },
+    {
+      "id": 8,
+      "label": "Querétaro, México",
+      "description": "Querétaro",
+      "lat": 20.5888,
+      "lon": -100.3899,
+      "color": "rojo",
+      "conexiones": [6, 9]
+    },
+    {
+      "id": 9,
+      "label": "Santiago, Chile",
+      "description": "Santiago",
+      "lat": -33.4489,
+      "lon": -70.6693,
+      "color": "rojo",
+      "conexiones": [7, 8]
+    },
+    {
+      "id": 9,
+      "label": "Montreal, Canada",
+      "description": "Montreal",
+      "lat": 45.5088,
+      "lon": -73.554,
+      "color": "azul",
+      "conexiones": [1, 5]
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  max-height: 100vh;
+  background: radial-gradient(circle at center, #04193e 11%, #072f6e 30%, #000206 100%);
+  overflow: hidden;
+}
+
+
+
+#world-title {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+  margin-top: 50px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px black;
+  background: linear-gradient(to bottom, #052968 10%, #031f4b 50%, rgba(0, 0, 0, 0.5) 100%);
+  padding: 10px 20px;
+  border-radius: 5px;
+  animation: title-animation 4s ease-in-out alternate infinite;
+}
+
+@keyframes title-animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+div.we-pp-wrapper {
+  
+  text-align : center;
+  -webkit-box-shadow : 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.we-pm-icon {
+  /* Ajustar el tamaño, color y otros estilos según sea necesario */
+  width: 50px;
+  height: 50px;
+  /* background-color: rgb(4, 94, 228); */
+  border-radius: 80%;
+  
+  /* Agregar la animación "spark" */
+  animation: spark 1.3s linear infinite;
+}
+
+@keyframes spark {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  10% {
+    opacity: 1;
+    transform: scale(0.2);
+  }
+  90% {
+    opacity: 1;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+
+
+
+div.we-pp-content {
+  background: transparent;
+  text-align : center;
+}
+
+#earth {
+    width: 100%;
+    height: 700px;
+  }
+  
+
+#locations {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 998;
+    padding: 10px;
+    font-size: 0.8rem; /* Tamaño de letra ajustado */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+  }
+
+  #locations li {
+    font-size: 12px;
+    list-style: none;
+    margin: 5px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1 0 150px; /* Establece el ancho mínimo y máximo para cada elemento */
+    text-align: center; /* Centra el texto en cada elemento */
+  }
+  
+  
+
+#locations ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+#locations li.active,
+#locations li:hover {
+  background-color: rgba(0, 255, 0, 0.5);
+  animation: pulse-animation 2s infinite;
+}
+
+/* Estilos para los marcadores */
+.we-leaflet-marker-icon {
+  width: 20px;
+  height: 32px;
+  background-color: transparent;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.we-leaflet-marker-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.we-leaflet-marker-icon:hover {
+  transform: scale(1.2);
+}
+
+.pulse {
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+.we-leaflet-marker-icon.ping {
+    transform: scale(1.5);
+    animation: pulse-animation 2s infinite;
+  }
+  
+  @keyframes pulse-animation {
+    0% {
+      transform: scale(1.5);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(2);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(1.5);
+      opacity: 1;
+    }
+  }
+  
+
+  .gps-marker {
+    background: transparent;
+    border: none;
+  }
+  .gps-marker img {
+    width: 100%;
+    height: 100%;
+  }
+
+
